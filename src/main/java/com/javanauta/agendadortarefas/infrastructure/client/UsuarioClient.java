@@ -15,7 +15,7 @@ public interface UsuarioClient {
     O metodo abaixo, possui a responsabilidade de apontar para a api
      que reotrnara os dados do usuario.
      */
-    @GetMapping()
+    @GetMapping("/usuario")
     UsuarioDTO buscaUsuarioPorEmail(@RequestParam("email") String email,
                                     @RequestHeader("Authorization") String token);
 }
